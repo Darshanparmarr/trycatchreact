@@ -5,6 +5,7 @@ import MenuBar from "./component/Navbar/MenuBar"
 import Counter from "./component/Counter"
 import News from "./pages/NewsPage/News"
 import Article1 from "./component/Article1"
+import Article2 from "./component/Article2"
 
 
 function App() {
@@ -18,7 +19,12 @@ function App() {
         <Route path="/counter" element={<Counter />} />
 
         <Route path="/news" element={<News />}>
-          <Route path="article" element={<Article1/>} />
+          
+          <Route path="article1" element={<Article1/>}>
+            <Route path="article2" element={<Article2/>} />
+
+          </Route>
+          
         </Route>
           
       </Routes>

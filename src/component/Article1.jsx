@@ -1,7 +1,11 @@
+import { Outlet } from "react-router-dom"
 
 function Article1() {
   return (
-    <div>Article1</div>
+      <>
+      <h1>Article 1 </h1>
+      <Outlet/>
+      </>
   )
 }
 
