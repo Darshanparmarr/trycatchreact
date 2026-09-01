@@ -17,6 +17,7 @@ function MenuBar() {
             <Nav.Link as={Link} to={"/news"}  >News</Nav.Link>
             <Nav.Link as={Link} to={"/news/article1"}  >Article 1</Nav.Link>
             <Nav.Link as={Link} to={"/news/article1/article2"}  >Article 2</Nav.Link>
+            <Nav.Link as={Link} to={"/lecture4"}  >Lecture 4</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
