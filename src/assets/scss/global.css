@@ -1,0 +1,8 @@
+.scss {
+  background-color: red;
+}
+@media (max-width: 480px) {
+  .scss {
+    background-color: green;
+  }
+}/*# sourceMappingURL=global.css.map */
