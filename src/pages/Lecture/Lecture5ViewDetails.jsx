@@ -22,7 +22,7 @@ function Lecture5ViewDetails() {
             }
         }
         fetchData()
-    }, [])
+    }, [id])
     
   return (
     <>
