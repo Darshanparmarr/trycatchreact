@@ -7,6 +7,7 @@ import News from "./pages/NewsPage/News"
 import Article1 from "./component/Article1"
 import Article2 from "./component/Article2"
 import Lecture from "./component/Lecture"
+import Lecture5ViewDetails from "./pages/Lecture/Lecture5ViewDetails"
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/counter" element={<Counter />} />
         <Route path="/lecture" element={<Lecture />} />
+        <Route path="/view-details/:id" element={<Lecture5ViewDetails />} />
 
         <Route path="/news" element={<News />}>
           <Route path="article1" element={<Article1/>}>

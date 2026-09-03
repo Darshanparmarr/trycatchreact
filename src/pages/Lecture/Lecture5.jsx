@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 function Lecture5() {
     const [products, setProducts] = useState([])
+    const navigate = useNavigate();
     useEffect(() => {
         const fetchData = async() => {
             try {
@@ -16,7 +18,7 @@ function Lecture5() {
         fetchData()
     }, [])
     const handleViewDetails = (id) => {
-        console.log("Idd", id);
+        navigate(`/view-details/${id}`)
     }
   return (
       <>
@@ -25,7 +27,6 @@ function Lecture5() {
               return (
                   <div key={elem.id}>
                       <h2>{elem.title}</h2>
-                      <p>{elem.description}</p>
                       <button onClick={()=>handleViewDetails(elem.id)}>View Detail</button>
                   </div>
               )

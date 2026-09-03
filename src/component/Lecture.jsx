@@ -4,8 +4,8 @@ import Lecture5 from '../pages/Lecture/Lecture5'
 function Lecture() {
   return (
       <>
-        <Lecture4 />
         <Lecture5/>  
+        <Lecture4 />
     </>
   )
 }
