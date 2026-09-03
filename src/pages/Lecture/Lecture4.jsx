@@ -23,7 +23,8 @@ const Lecture4 = () => {
 
     return (
         <>
-            <h1>Added to Cart {add}</h1>
+            <h1>Lecture 4</h1>
+            <h3>Added to Cart {add}</h3>
             <div>
                 {product.map((elem) => {
                     return (

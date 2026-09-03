@@ -6,7 +6,7 @@ import Counter from "./component/Counter"
 import News from "./pages/NewsPage/News"
 import Article1 from "./component/Article1"
 import Article2 from "./component/Article2"
-import Lecture4 from "./component/Lecture4"
+import Lecture from "./component/Lecture"
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Route path="/" element={<HomePage/>} />
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/counter" element={<Counter />} />
-        <Route path="/lecture4" element={<Lecture4 />} />
+        <Route path="/lecture" element={<Lecture />} />
 
         <Route path="/news" element={<News />}>
           <Route path="article1" element={<Article1/>}>
